@@ -1,4 +1,4 @@
-namespace LaboratoriumASPNET;
+namespace WebAPP;
 
 public class Program
 {
