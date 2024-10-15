@@ -1,33 +1,23 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ViewComponents;
 using WebAPP.Models;
 
 namespace WebAPP.Controllers;
 
-public class HomeController : Controller
+public class CalculatorController : Controller
 {
+
     private readonly ILogger<HomeController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    public CalculatorController(ILogger<HomeController> logger)
     {
         _logger = logger;
     }
 
-    public IActionResult Index()
+    public IActionResult Form()
     {
         return View();
     }
 
-    public IActionResult Privacy()
-    {
-        return View();
-    }
-
-    public IActionResult About()
-    {
-        return View();
-    }
     public IActionResult Calculator(Operator? op, double? x, double? y = null)
     {
         // var op =Request.Query["op"];
@@ -61,7 +51,7 @@ public class HomeController : Controller
                 break;
             case Operator.Pow:
                 ViewBag.Result = Math.Pow((double)x,(double)y);
-            break;
+                break;
             case Operator.Sin:
                 ViewBag.Result = Math.Sin((double)x);
                 break;
@@ -72,11 +62,12 @@ public class HomeController : Controller
     {
         Add, Sub, Mul, Div, Sin, Pow
     }
-
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
+    public IActionResult Result(Calculator model)
     {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        if (!model.IsValid())
+        {
+            return View("Error");
+        }
+        return View(model);
     }
 }
-
