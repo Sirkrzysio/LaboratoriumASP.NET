@@ -1,0 +1,44 @@
+@model Dictionary<int, ContactModel>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+<h2>Kontakty</h2>
+<a class="btn btn-primary" asp-action="Add" asp-controller="Contact">Dodaj kontakt</a>
+<h4>Lista kontaktów</h4>
+<table class="table">
+    <thread>
+        <tr>
+            <th>
+                Imię
+            </th>
+            <th>
+                Nazwisko
+            </th>
+            <th>
+                Akcje
+            </th>
+        </tr>
+    </thread>
+    
+    <tbody>
+        @foreach (var entry in @Model)
+        {
+            <tr>
+                <td>
+                    @entry.Value.FirstName
+                
+                    @entry.Value.LastName
+                </td>
+                <td>
+                    <a class="btn btn-success" asp-controller="Contact" asp-action="Edit" asp-route-id=@entry.Key>Edycja</a>
+                    <a class="btn btn-info" asp-controller="Contact" asp-action="Details" asp-route-id=@entry.Key>Szczegoly</a>
+                    <a class="btn btn-danger" asp-controller="Contact" asp-action="Delete" asp-route-id=@entry.Key>Usun</a>
+                </td>
+            </tr>
+            
+        }
+    </tbody>
+
+</table>

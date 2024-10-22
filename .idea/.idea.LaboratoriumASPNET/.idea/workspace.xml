@@ -12,12 +12,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50a66bd3-26cd-48f0-a8b0-91d904a65d81" name="Changes" comment="fix">
-      <change afterPath="$PROJECT_DIR$/WebAPP/Controllers/CalculatorController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebAPP/Models/Calculator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebAPP/Views/Calculator/Form.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebAPP/Views/Calculator/Result.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Controllers/HomeController.cs" afterDir="false" />
+    <list default="true" id="50a66bd3-26cd-48f0-a8b0-91d904a65d81" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/WebAPP/Controllers/ContactController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAPP/Models/ContactModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAPP/Views/Contact/Add.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAPP/Views/Contact/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASPNET/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASPNET/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPP/Models/Birth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Models/Birth.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAPP/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Views/Shared/_Layout.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +32,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lab1" />
+        <entry key="$PROJECT_DIR$" value="lab2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,7 +50,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/WebAPP/Views/Shared/_ValidationScriptsPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Users/krzysztof.rychter/RiderProjects/LaboratoriumASPNET/WebAPP/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -59,7 +60,9 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2nTktfXX7dUzyq894yUuKOCThXq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -69,13 +72,13 @@
     &quot;.NET Launch Settings Profile.LaboratoriumASPNET: IIS Express.executor&quot;: &quot;Run&quot;,
     &quot;.NET Launch Settings Profile.WebAPP: https.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;lab2&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lab3&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -191,7 +194,9 @@
       <updated>1727796140567</updated>
       <workItem from="1729004670771" duration="226000" />
       <workItem from="1729004911524" duration="101000" />
-      <workItem from="1729005043150" duration="3877000" />
+      <workItem from="1729005043150" duration="4256000" />
+      <workItem from="1729609071518" duration="1735000" />
+      <workItem from="1729610841412" duration="2868000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -217,7 +222,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729005186741</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="comicik">
+      <option name="closed" value="true" />
+      <created>1729009260266</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729009260266</updated>
+    </task>
+    <task id="LOCAL-00005" summary="kolejna zmiana">
+      <option name="closed" value="true" />
+      <created>1729009286381</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729009286381</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +262,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="lab1" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="comicik" />
+    <MESSAGE value="kolejna zmiana" />
+    <option name="LAST_COMMIT_MESSAGE" value="kolejna zmiana" />
   </component>
 </project>

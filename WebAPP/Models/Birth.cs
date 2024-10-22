@@ -1,4 +1,4 @@
-namespace WebAPP.Models;
+namespace WebAPP.Models
 
 {
     public class Birth
