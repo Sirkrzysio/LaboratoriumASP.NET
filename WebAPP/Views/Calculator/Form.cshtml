@@ -2,26 +2,25 @@
     <div class="row justify-content-md-center">
         <div class="col-6">
             <h2>Kalkulator</h2>
-            <form action="Result" method="GET">
+            <form action="Result" method="POST">
                 <div class="mb-3">
                     <label class="form-label" for="x">Liczba 1</label>
-                    <input class="form-control" type="number" name="X" step="0.00001" id="x"/>
+                    <input class="form-control" type="number" name="x" step="0.00001" id="x"/>
                 </div>
                 <div class="mb-3">
                     <label class="form-label" for="operator">Operator</label>
-                    <select class="form-control"  name="Operator" id="operator">
-                            <option value="add">+</option>
-                            <option value="sub">-</option>
-                            <option value="mul">*</option>
-                            <option value="div">/</option>
-                            <option value="pow">^</option>
-                            <option value="sin">sin</option>
-                            
-                        </select>
+                    <select class="form-control" name="operator" id="operator">
+                        <option value="ADD">+</option>
+                        <option value="SUB">-</option>
+                        <option value="MUL">*</option>
+                        <option value="DIV">/</option>
+                        <option value="POW">^</option>
+                        <option value="SIN">sin</option>
+                    </select>
                 </div>
                 <div class="mb-3">
                     <label class="form-label" for="y">Liczba 2</label>
-                    <input class="form-control" type="number" name="Y" step="0.00001" id="y"/>
+                    <input class="form-control" type="number" name="y" step="0.00001" id="y"/>
                 </div>
                 <div class="mb-3">
                     <button class="btn btn-primary" type="submit">Oblicz</button>
@@ -30,4 +29,3 @@
         </div>
     </div>
 </div>
-

@@ -1,95 +1,54 @@
 using Microsoft.AspNetCore.Mvc;
-using WebAPP.Models;
+using WebApp.Models;
+using WebApp.Models.Services;
 
-namespace WebAPP.Controllers;
-
-public class ContactController : Controller
+namespace WebApp.Controllers
 {
-
-
-    private static Dictionary<int, ContactModel> _contacts = new()
+    public class ContactController : Controller
     {
+        private readonly IContactService _contactService;
 
+        public ContactController(IContactService contactService)
         {
-            1,
-            new ContactModel()
-            {
-                Id = 1,
-                FirstName = "Adam",
-                LastName = "Małysz",
-                Email = "adam@malysz.pl",
-                PhoneNumber = " 999 222 333",
-                BirthDate = new DateOnly(2003, 10, 10)
-            }
-        },
-        {
-            2,
-            new ContactModel()
-            {
-                Id = 2,
-                FirstName = "Zbigniew",
-                LastName = "Ziobro",
-                Email = "adam@malysz.pl",
-                PhoneNumber = " 999 222 333",
-                BirthDate = new DateOnly(2003, 10, 10)
-            }
-        },
-        {
-            3,
-            
-            new ContactModel()
-            {
-            Id = 3,
-            FirstName = "Adam",
-            LastName = "Małysz",
-            Email = "adam@malysz.pl",
-            PhoneNumber = " 999 222 333",
-            BirthDate = new DateOnly(2003, 10, 10)
+            _contactService = contactService;
         }
 
-    }
-    };
-
-    private static int currentId = 3;
-    // Lista kontaktów. przycisk dodawania kontaktu
-    public IActionResult Index()
-    {
-        return View(_contacts);
-    }
-    // formularz dodawania kontaktu
-    public IActionResult Add()
-    {
-        return View();
-    }
-    // Odebrania danych z formularza walidacja i dodawanie kontaktu do kolekcji
-    
-    [HttpPost]
-    public IActionResult Add(ContactModel contactModel)
-    {
-        if (!ModelState.IsValid)
+        public IActionResult Index()
         {
-            return View(contactModel);
+            return View(_contactService.GetAll());
         }
 
-        currentId = ++currentId;
-        _contacts.Add(currentId, contactModel);
+        public IActionResult Add()
+        {
 
-        return RedirectToAction("Index");
-    }
+            return View();
+        }
 
-    public IActionResult Delete(int id)
-    {
-        _contacts.Remove(id);
-        return View("Index", _contacts);
-    }
+        [HttpPost]
+        public IActionResult Add(ContactModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+            _contactService.Add(model);
+            return RedirectToAction(nameof(Index));
+        }
 
-    public IActionResult Edit()
-    {
-        throw new NotImplementedException();
-    }
+        public IActionResult Delete(int id, ContactModel model)
+        {
+            _contactService.Delete(id);
+            return RedirectToAction(nameof(Index));
+        }
 
-    public IActionResult Details()
-    {
-        throw new NotImplementedException();
+        public IActionResult Edit(int id)
+        {
+            return View(_contactService.GetById(id));
+        }
+
+        public IActionResult Details(int id)
+        {
+                return View(_contactService.GetById(id));
+        }
     }
 }

@@ -1,60 +1,56 @@
-using WebAPP.Controllers;
-
-namespace WebAPP.Models;
+namespace WebApp.Models;
 
 public class Calculator
 {
-    public CalculatorController.Operator? Operator { get; set; }
+    public Operator? Operator { get; set; }
     public double? X { get; set; }
     public double? Y { get; set; }
 
-    public String Op
+    public string Op
     {
         get
         {
-            switch (Operator)
+            return Operator switch
             {
-                case CalculatorController.Operator.Add:
-                    return "+";
-                case CalculatorController.Operator.Sub:
-                    return "-";
-                case CalculatorController.Operator.Mul:
-                    return "*";
-                case CalculatorController.Operator.Div:
-                    return "/";
-                case CalculatorController.Operator.Pow:
-                    return "^";
-                case CalculatorController.Operator.Sin:
-                    return "sin";
-                default:
-                    return "";
-            }
+                Models.Operator.ADD => "+",
+                Models.Operator.SUB => "−",
+                Models.Operator.MUL => "×",
+                Models.Operator.DIV => "÷",
+                Models.Operator.POW => "^",
+                Models.Operator.SIN => "sin",
+                _ => ""
+            };
         }
     }
 
     public bool IsValid()
     {
-        return Operator != null && X != null && (Y != null || Operator == CalculatorController.Operator.Sin);
+        return Operator != null &&
+               X != null &&
+               (Y != null || Operator == Models.Operator.SIN);
     }
 
-    public double Calculate() {
-        switch (Operator)
+    public double Calculate()
+    {
+        return Operator switch
         {
-            case CalculatorController.Operator.Add:
-                return (double) (X + Y);
-            case CalculatorController.Operator.Sub:
-                return (double) (X - Y);
-            case CalculatorController.Operator.Mul:
-                return (double) (X * Y);
-            case CalculatorController.Operator.Div:
-                return (double) (X / Y);
-            case CalculatorController.Operator.Pow:
-                return  Math.Pow((double)X,(double)Y);
-            case CalculatorController.Operator.Sin:
-                return  Math.Sin((double)X);
-            
-                
-            default: return double.NaN;
-        }
+            Models.Operator.ADD => (double)(X + Y)!,
+            Models.Operator.SUB => (double)(X - Y)!,
+            Models.Operator.MUL => (double)(X * Y)!,
+            Models.Operator.DIV => (double)(X / Y)!,
+            Models.Operator.POW => Math.Pow((double)X!, (double)Y!),
+            Models.Operator.SIN => Math.Sin((double)X!),
+            _ => double.NaN
+        };
     }
+}
+
+public enum Operator
+{
+    ADD,
+    SUB,
+    MUL,
+    DIV,
+    POW,
+    SIN
 }
