@@ -14,7 +14,9 @@ public class ContactMapper
             FirstName = arg.FirstName,
             BirthDate = arg.BirthDate,
             PhoneNumber = arg.PhoneNumber,
-            Email = arg.Email
+            Email = arg.Email,
+            Organization = arg.Organization,
+            OrganizationId = arg.OrganizationId
         };
     }
 
@@ -27,7 +29,9 @@ public class ContactMapper
             FirstName = arg.FirstName,
             BirthDate = arg.BirthDate,
             PhoneNumber = arg.PhoneNumber,
-            Email = arg.Email
+            Email = arg.Email,
+            Organization = arg.Organization,
+            OrganizationId = arg.OrganizationId
         };
     }
 }

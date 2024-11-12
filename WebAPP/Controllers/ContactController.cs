@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using WebApp.Models;
 using WebApp.Models.Services;
 
@@ -43,6 +44,13 @@ namespace WebApp.Controllers
 
         public IActionResult Edit(int id)
         {
+            ContactModel model = new ContactModel();
+            model.Organizations = (List<SelectListItem>)_contactService.GetOrganizations()
+                .Select(e => new SelectListItem()
+                {
+                    Text = e.Name,
+                    Value = e.Id.ToString()
+                });
             return View(_contactService.GetById(id));
         }
 

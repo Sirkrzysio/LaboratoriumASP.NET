@@ -1,6 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNetCore.Mvc;
+using WebAPP.Models;
 
 namespace WebApp.Models.Services;
 
@@ -29,4 +30,8 @@ public class ContactEntity {
     public Category Category { get; set; }
     
     public DateTime Created { get; set; }
+    
+    public int OrganizationId { get; set; }
+    
+    public OrganizationEntity? Organization { get; set; }
 }

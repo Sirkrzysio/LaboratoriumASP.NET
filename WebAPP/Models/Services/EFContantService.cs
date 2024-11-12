@@ -39,4 +39,9 @@ public class EFContantService : IContactService
     {
         return ContactMapper.FromEntity(_context.Contacts.Find(id));
     }
+
+    public List<OrganizationEntity> GetOrganizations()
+    {
+        return _context.Organizations.ToList();
+    }
 }

@@ -1,3 +1,5 @@
+using WebAPP.Models;
+
 namespace WebApp.Models.Services;
 
 public class MemoryContactService: IContactService
@@ -74,5 +76,10 @@ public class MemoryContactService: IContactService
     public ContactModel? GetById(int id)
     {
         return _contacts[id];
+    }
+
+    public List<OrganizationEntity> GetOrganizations()
+    {
+        throw new NotImplementedException();
     }
 }

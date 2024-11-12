@@ -13,77 +13,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50a66bd3-26cd-48f0-a8b0-91d904a65d81" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WebAPP/Models/AppDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebAPP/Models/ContactEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebAPP/Models/ContactMapper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebAPP/Models/Services/EFContantService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAPP/Models/OrganizationEntity.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASPNET/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASPNET/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Controllers/BirthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Controllers/BirthController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Controllers/CalculatorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Controllers/CalculatorController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAPP/Controllers/ContactController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Controllers/ContactController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Models/Birth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Models/Birth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Models/Calculator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Models/Calculator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPP/Migrations/20241105171116_Initial.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPP/Migrations/20241105171116_Initial.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPP/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPP/Models/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Models/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPP/Models/ContactEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Models/ContactEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPP/Models/ContactMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Models/ContactMapper.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAPP/Models/ContactModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Models/ContactModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Models/ErrorViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Models/ErrorViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPP/Models/Services/EFContantService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Models/Services/EFContantService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPP/Models/Services/IContactService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Models/Services/IContactService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAPP/Models/Services/MemoryContactService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Models/Services/MemoryContactService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAPP/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Views/Birth/Error.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Views/Birth/Error.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Views/Birth/Form.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Views/Birth/Form.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Views/Birth/Result.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Views/Birth/Result.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Views/Calculator/Form.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Views/Calculator/Form.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Views/Calculator/Result.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Views/Calculator/Result.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAPP/Views/Contact/Add.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Views/Contact/Add.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Views/Contact/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Views/Contact/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Views/Home/About.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Views/Home/About.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Views/Home/Calculator.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Views/Home/Calculator.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Views/Home/Privacy.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Views/Home/Privacy.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Views/Shared/Error.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Views/Shared/Error.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Views/Shared/_Layout.cshtml.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Views/Shared/_Layout.cshtml.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Views/Shared/_ValidationScriptsPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Views/Shared/_ValidationScriptsPartial.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Views/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Views/_ViewImports.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Views/_ViewStart.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Views/_ViewStart.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAPP/WebAPP.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/WebAPP.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/css/site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/js/site.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/jquery-validation/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/jquery-validation/LICENSE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/jquery-validation/dist/additional-methods.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/jquery-validation/dist/additional-methods.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/jquery-validation/dist/jquery.validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/jquery-validation/dist/jquery.validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/jquery/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/jquery/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/jquery/dist/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/jquery/dist/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/wwwroot/lib/jquery/dist/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/wwwroot/lib/jquery/dist/jquery.min.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +41,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lab4" />
+        <entry key="$PROJECT_DIR$" value="lab5" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -114,8 +59,13 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://D:/Users/krzysztof.rychter/RiderProjects/LaboratoriumASPNET/WebAPP/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebAPP/wwwroot/lib/jquery/dist/jquery.min.map" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -134,9 +84,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     ".NET Launch Settings Profile.LaboratoriumASPNET: IIS Express.executor": "Run",
+    ".NET Launch Settings Profile.WebAPP: http.executor": "Run",
     ".NET Launch Settings Profile.WebAPP: https.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "lab5",
+    "git-widget-placeholder": "lab6",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -263,7 +214,8 @@
       <workItem from="1729610841412" duration="3248000" />
       <workItem from="1730821884091" duration="226000" />
       <workItem from="1730822981947" duration="558000" />
-      <workItem from="1730823571910" duration="3097000" />
+      <workItem from="1730823571910" duration="3736000" />
+      <workItem from="1731427279809" duration="4750000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -313,7 +265,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729614113825</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="lab 5 + 4 zdalne">
+      <option name="closed" value="true" />
+      <created>1730826735910</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730826735910</updated>
+    </task>
+    <task id="LOCAL-00008" summary="poprawka">
+      <option name="closed" value="true" />
+      <created>1730826760599</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1730826760599</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,6 +308,8 @@
     <MESSAGE value="comicik" />
     <MESSAGE value="kolejna zmiana" />
     <MESSAGE value="Commicikk" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commicikk" />
+    <MESSAGE value="lab 5 + 4 zdalne" />
+    <MESSAGE value="poprawka" />
+    <option name="LAST_COMMIT_MESSAGE" value="poprawka" />
   </component>
 </project>
