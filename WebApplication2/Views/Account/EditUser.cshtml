@@ -1,0 +1,16 @@
+﻿@model WebApplication2.Controllers.AccountController.User
+
+<h2>Edit User</h2>
+
+<form asp-action="EditUser" method="post">
+    <div class="form-group">
+        <label>Username</label>
+        <input type="text" class="form-control" value="@Model.Username" disabled />
+    </div>
+    <div class="form-group">
+        <label>New Password</label>
+        <input type="password" name="newPassword" class="form-control" required />
+    </div>
+    <input type="hidden" name="username" value="@Model.Username" />
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>

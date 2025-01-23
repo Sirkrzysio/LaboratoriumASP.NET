@@ -13,22 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50a66bd3-26cd-48f0-a8b0-91d904a65d81" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WebAPP/Models/OrganizationEntity.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASPNET/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LaboratoriumASPNET/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Controllers/ContactController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Controllers/ContactController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Migrations/20241105171116_Initial.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Migrations/20241105171116_Initial.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Models/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Models/AppDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Models/ContactEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Models/ContactEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Models/ContactMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Models/ContactMapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Models/ContactModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Models/ContactModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Models/Services/EFContantService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Models/Services/EFContantService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Models/Services/IContactService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Models/Services/IContactService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Models/Services/MemoryContactService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Models/Services/MemoryContactService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/Views/Contact/Add.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/Views/Contact/Add.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPP/WebAPP.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPP/WebAPP.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +21,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DpaMonitoringSettings">
-    <option name="autoShow" value="false" />
+    <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -62,10 +47,10 @@
     <setting file="mock://D:/Users/krzysztof.rychter/RiderProjects/LaboratoriumASPNET/WebAPP/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebAPP/wwwroot/lib/jquery/dist/jquery.min.map" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -81,32 +66,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.LaboratoriumASPNET: IIS Express.executor": "Run",
-    ".NET Launch Settings Profile.WebAPP: http.executor": "Run",
-    ".NET Launch Settings Profile.WebAPP: https.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "lab6",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "RiderNuGetOptionsPageId",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.LaboratoriumASPNET: IIS Express.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.WebAPP: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.WebAPP: https.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lab6&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;RiderNuGetOptionsPageId&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "IgnoreLang"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;IgnoreLang&quot;
     ],
-    "rider.external.source.directories": [
-      "D:\\Users\\krzysztof.rychter\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "D:\\Users\\krzysztof.rychter\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "D:\\Users\\krzysztof.rychter\\AppData\\Local\\Symbols\\src"
+    &quot;rider.external.source.directories&quot;: [
+      &quot;D:\\Users\\krzysztof.rychter\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;D:\\Users\\krzysztof.rychter\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;D:\\Users\\krzysztof.rychter\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.WebAPP: https">
     <configuration name="LaboratoriumASPNET: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/LaboratoriumASPNET/LaboratoriumASPNET.csproj" />
@@ -310,6 +295,6 @@
     <MESSAGE value="Commicikk" />
     <MESSAGE value="lab 5 + 4 zdalne" />
     <MESSAGE value="poprawka" />
-    <option name="LAST_COMMIT_MESSAGE" value="poprawka" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
