@@ -1,0 +1,30 @@
+@model List<WebApplication2.Entities.UniversityRankingYear>
+
+@{
+    ViewData["Title"] = "University Ranking Details";
+}
+
+<h1>@ViewData["University"] - @ViewData["RankingSystem"]</h1>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Year</th>
+        <th>Ranking Criteria</th>
+        <th>Score</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Year</td>
+            <td>@item.RankingCriteria.CriteriaName</td>
+            <td>@item.Score</td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+
+

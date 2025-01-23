@@ -1,0 +1,56 @@
+@model List<ContactModel>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>Kontakty</h2>
+<a class="btn btn-primary" asp-action="Add" asp-controller="Contact">Dodaj kontakt</a>
+<h4>Lista kontaktów</h4>
+
+@if (Model.Count > 0)
+{
+
+    <table class="table">
+        <thread>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(l => l[0].FirstName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(l => l[0].LastName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(l => l[0].Category)
+                </th>
+                <th class="text-end">Operacje</th>
+            </tr>
+        </thread>
+        <tbody>
+        @foreach (var entry in @Model)
+        {
+            <tr>
+                <td>
+                    @entry.FirstName
+                </td>
+                <td>
+                    @entry.LastName
+                </td>
+                <td>@entry.Category.GetDisplayName()</td>
+                <td>
+                    <a class="btn btn-success"asp-controller="Contact" asp-action="Edit" asp-route-id=@entry.Id>Edycja</a>
+                    <a class="btn btn-info"asp-controller="Contact" asp-action="Details" asp-route-id=@entry.Id>Szczegóły</a>
+                    <a class="btn btn-danger" asp-controller="Contact" asp-action="Delete" asp-route-id=@entry.Id>Usuń</a>
+                </td>
+            </tr>
+        }
+
+        </tbody>
+
+    </table>
+}
+else
+{
+    <h3 class="text-danger">Nie masz jeszcze kontaktów </h3>
+}

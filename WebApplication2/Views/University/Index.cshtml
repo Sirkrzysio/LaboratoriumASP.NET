@@ -1,0 +1,119 @@
+@model IEnumerable<WebApplication2.Entities.University>
+@* @model IEnumerable<dynamic> *@
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>University List</h1>
+
+<p>
+    <a asp-action="AddRanking" class="btn btn-success">Add Ranking</a>
+</p>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UniversityName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Country)
+        </th>
+        
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UniversityName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Country!.CountryName) <!-- Poprawienie wyświetlania nazwy kraju -->
+            </td>
+            
+            <td>
+                <!-- Przycisk do edycji, szczegółów i usuwania -->
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a> |
+
+                <!-- Przycisk do wyświetlania szczegółów rankingu -->
+                <a href="@Url.Action("UniversityRankingDetails", "University", new { universityId = item.Id, rankingSystemId = 1 })" class="btn btn-primary">
+                    View Ranking Details
+                </a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<div class="pagination">
+    @if (ViewBag.CurrentPage > 1)
+    {
+        <a href="@Url.Action("Index", new { page = 1, size = ViewBag.PageSize })">First</a>
+        <a href="@Url.Action("Index", new { page = ViewBag.CurrentPage - 1, size = ViewBag.PageSize })">Previous</a>
+    }
+
+    @for (int i = 1; i <= ViewBag.TotalPages; i++)
+    {
+        if (i == 1 || i == ViewBag.TotalPages || (i >= ViewBag.CurrentPage - 2 && i <= ViewBag.CurrentPage + 2))
+        {
+            if (i == ViewBag.CurrentPage)
+            {
+                <span class="current-page">@i</span>
+            }
+            else
+            {
+                <a href="@Url.Action("Index", new { page = i, size = ViewBag.PageSize })">@i</a>
+            }
+        }
+        else if (i == 2 || i == ViewBag.TotalPages - 1)
+        {
+            <span>...</span>
+        }
+    }
+
+    @if (ViewBag.CurrentPage < ViewBag.TotalPages)
+    {
+        <a href="@Url.Action("Index", new { page = ViewBag.CurrentPage + 1, size = ViewBag.PageSize })">Next</a>
+        <a href="@Url.Action("Index", new { page = ViewBag.TotalPages, size = ViewBag.PageSize })">Last</a>
+    }
+</div>
+
+
+<style>
+    .pagination {
+        display: flex;
+        gap: 5px;
+        margin-top: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .pagination a, .pagination span {
+        padding: 5px 10px;
+        text-decoration: none;
+        border: 1px solid #ddd;
+        color: #333;
+        border-radius: 3px;
+    }
+
+    .pagination .current-page {
+        font-weight: bold;
+        background-color: #007bff;
+        color: white;
+        border-color: #007bff;
+    }
+
+    .pagination a:hover {
+        background-color: #f0f0f0;
+    }
+
+    .pagination span {
+       pointer-events: none;
+    }
+</style>

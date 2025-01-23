@@ -1,0 +1,42 @@
+@model WebApp.Models.ContactModel?
+
+@{
+    Layout = "_Layout";
+}
+<h2>Edytuj kontakt</h2>
+<form asp-action="Edit" asp-controller="Contact" method="post">
+    <div class="mb-3">
+        <label class="form-label" asp-for="FirstName"></label>
+        <input class="form-control" asp-for="FirstName"/>
+        <span class="text-danger" asp-validation-for="FirstName"></span>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" asp-for="LastName"></label>
+        <input class="form-control" asp-for="LastName"/>
+        <span class="text-danger" asp-validation-for="LastName"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Email"></label>
+        <input class="form-control" asp-for="Email"/>
+        <span class="text-danger" asp-validation-for="Email"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="PhoneNumber"></label>
+        <input class="form-control" asp-for="PhoneNumber"/>
+        <span class="text-danger" asp-validation-for="PhoneNumber"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="BirthDate"></label>
+        <input class="form-control" asp-for="BirthDate"/>
+        <span class="text-danger" asp-validation-for="BirthDate"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Category"></label>
+        <select class="form-control" asp-for="Category" asp-items="@Html.GetEnumSelectList<Category>()" ></select>
+        <span asp-validation-for="Category"></span>
+    </div>
+    <button class="btn btn-outline-primary" type="submit">Zapisz</button>
+</form>
+
+

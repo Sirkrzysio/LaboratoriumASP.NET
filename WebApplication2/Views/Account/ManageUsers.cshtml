@@ -1,0 +1,41 @@
+﻿@model List<WebApplication2.Controllers.AccountController.User>
+
+<h2>Manage Users</h2>
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-success">
+        @ViewBag.Message
+    </div>
+}
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Error
+    </div>
+}
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Username</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var user in Model)
+    {
+        <tr>
+            <td>@user.Username</td>
+            <td>
+                <a asp-action="EditUser" asp-route-username="@user.Username" class="btn btn-warning">Edit</a>
+                <form asp-action="DeleteUser" asp-route-username="@user.Username" method="post" style="display: inline;">
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
